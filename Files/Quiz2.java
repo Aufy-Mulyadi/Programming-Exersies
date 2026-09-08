@@ -4,10 +4,10 @@ class IPv4Gen {
   private RanNum random = new RanNum();
 
   public String generate() {
-    int part1 = Integer.getInteger(random.getNumber());
-    int part2 = Integer.getInteger(random.getNumber());
-    int part3 = Integer.getInteger(random.getNumber());
-    int part4 = Integer.getInteger(random.getNumber());
+    int part1 = random.getNumber();
+    int part2 = random.getNumber();
+    int part3 = random.getNumber();
+    int part4 = random.getNumber();
 
     return part1 + "." + part2 + "." + part3 + "." + part4;
   }

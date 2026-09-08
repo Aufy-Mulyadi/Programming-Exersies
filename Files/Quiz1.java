@@ -9,9 +9,8 @@ class RanNum {
     this.random = new Random();
   }
 
-  public String getNumber() {
-    int number = this.random.nextInt(257); 
-    return Integer.toString(number);
+  public int getNumber() {
+    return this.random.nextInt(257); 
   }
 }
 

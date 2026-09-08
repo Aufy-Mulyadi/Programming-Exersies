@@ -33,12 +33,15 @@ class filter {
 public class Quiz6 {
   public static void main(String[] args) {
     filter test1 = new filter("127.0.0.1");
+    System.out.println("127.0.0.1");
     System.out.println(test1.check());
-
+    
     filter test2 = new filter("time.com");
+    System.out.println("time.com");
     System.out.println(test2.check());
-
+    
     filter test3 = new filter("example.com");
+    System.out.println("example.com");
     System.out.println(test3.check());
   }
 }
