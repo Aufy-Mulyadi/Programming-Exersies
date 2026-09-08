@@ -219,6 +219,7 @@ class MACGen {
 }
 ```
 #### Proof of work
+<img width="1200" height="800" alt="Photo on 08-09-26 at 10 17 PM" src="https://github.com/user-attachments/assets/60a92fe7-bb0f-447a-9711-8da68904fe2e" />
 
 ## quiz 8
 ### Create a class that uses parallel arrays to store a NAT table (Network Address Translation)
