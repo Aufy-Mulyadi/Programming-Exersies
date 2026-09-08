@@ -1,6 +1,7 @@
 # programming excises
 
 ## quiz 1
+### Create a class that generates a random number between 0 and 256, returns a string
 
 ```java
 import java.util.Random;
@@ -22,6 +23,8 @@ class RanNum {
 <img width="1103" height="140" alt="Screenshot 2026-09-08 at 9 55 42 PM" src="https://github.com/user-attachments/assets/c2734c3a-19a8-4fdd-a6c7-e14d3300f7e7" />
 
 ## quiz 2
+### Create a class that generates a valid IPv4 address. You may use the class RanNum()
+
 
 ```java
 class IPv4Gen {
@@ -41,6 +44,8 @@ class IPv4Gen {
 <img width="1107" height="158" alt="Screenshot 2026-09-08 at 9 59 29 PM" src="https://github.com/user-attachments/assets/3ce7ce88-7419-4088-9f59-15e3531cd735" />
 
 ## quiz 3
+### Create a class that receives a input String add and it checks for valid IPv4 address.
+
 
 ```java
 class checker {
@@ -66,6 +71,7 @@ class checker {
 <img width="1109" height="133" alt="Screenshot 2026-09-08 at 10 01 14 PM" src="https://github.com/user-attachments/assets/e5180712-b2be-4a58-9d28-39ce39df1fa7" />
 
 ## quiz 4
+### Create a class receives a service name, ip address and build a ip:port address.
 
 ```java
 class porter {
@@ -109,6 +115,7 @@ class porter {
 <img width="1109" height="140" alt="Screenshot 2026-09-08 at 10 02 32 PM" src="https://github.com/user-attachments/assets/dd47a405-64a2-4f60-a426-cb30f71e2d3c" />
 
 ## quiz 5
+### Create a class that uses parallel arrays to store a table of hostnames and their IP addresses.
 
 ```java
 class dns {
@@ -149,8 +156,8 @@ class dns {
 #### Proof of work
 <img width="1114" height="138" alt="Screenshot 2026-09-08 at 10 03 25 PM" src="https://github.com/user-attachments/assets/26a77568-6129-4b21-ab5e-b7d6f7983913" />
 
-
 ## quiz 6
+### Create a class that uses parallel arrays to filter traffic in network using ip/hostnames.
 
 ```java
 class filter {
@@ -186,8 +193,8 @@ class filter {
 #### Proof of work
 <img width="1105" height="149" alt="Screenshot 2026-09-08 at 10 04 25 PM" src="https://github.com/user-attachments/assets/51b19ff3-3ac6-4f50-b1d4-8e2489755321" />
 
-
 ## quiz 7
+### Create the flow diagram for the method below
 
 ```java
 import java.util.Random;
@@ -212,10 +219,9 @@ class MACGen {
 }
 ```
 #### Proof of work
-<img width="1112" height="92" alt="Screenshot 2026-09-08 at 10 05 23 PM" src="https://github.com/user-attachments/assets/7fa8e0c9-a439-495e-ad68-5a5028ab1f97" />
-
 
 ## quiz 8
+### Create a class that uses parallel arrays to store a NAT table (Network Address Translation)
 
 ```java
 class NATTable {
