@@ -18,6 +18,8 @@ class RanNum {
   }
 }
 ```
+#### Proof of work
+<img width="1103" height="140" alt="Screenshot 2026-09-08 at 9 55 42 PM" src="https://github.com/user-attachments/assets/c2734c3a-19a8-4fdd-a6c7-e14d3300f7e7" />
 
 ## quiz 2
 
@@ -26,15 +28,17 @@ class IPv4Gen {
   private RanNum random = new RanNum();
 
   public String generate() {
-    int part1 = Integer.getInteger(random.getNumber());
-    int part2 = Integer.getInteger(random.getNumber());
-    int part3 = Integer.getInteger(random.getNumber());
-    int part4 = Integer.getInteger(random.getNumber());
+    int part1 = random.getNumber();
+    int part2 = random.getNumber();
+    int part3 = random.getNumber();
+    int part4 = random.getNumber();
 
     return part1 + "." + part2 + "." + part3 + "." + part4;
   }
 }
 ```
+#### Proof of work
+<img width="1107" height="158" alt="Screenshot 2026-09-08 at 9 59 29 PM" src="https://github.com/user-attachments/assets/3ce7ce88-7419-4088-9f59-15e3531cd735" />
 
 ## quiz 3
 
@@ -58,6 +62,8 @@ class checker {
   }
 }
 ```
+#### Proof of work
+<img width="1109" height="133" alt="Screenshot 2026-09-08 at 10 01 14 PM" src="https://github.com/user-attachments/assets/e5180712-b2be-4a58-9d28-39ce39df1fa7" />
 
 ## quiz 4
 
@@ -99,6 +105,8 @@ class porter {
   }
 }
 ```
+#### Proof of work
+<img width="1109" height="140" alt="Screenshot 2026-09-08 at 10 02 32 PM" src="https://github.com/user-attachments/assets/dd47a405-64a2-4f60-a426-cb30f71e2d3c" />
 
 ## quiz 5
 
@@ -138,6 +146,9 @@ class dns {
   }
 }
 ```
+#### Proof of work
+<img width="1114" height="138" alt="Screenshot 2026-09-08 at 10 03 25 PM" src="https://github.com/user-attachments/assets/26a77568-6129-4b21-ab5e-b7d6f7983913" />
+
 
 ## quiz 6
 
@@ -172,6 +183,9 @@ class filter {
   }
 }
 ```
+#### Proof of work
+<img width="1105" height="149" alt="Screenshot 2026-09-08 at 10 04 25 PM" src="https://github.com/user-attachments/assets/51b19ff3-3ac6-4f50-b1d4-8e2489755321" />
+
 
 ## quiz 7
 
@@ -197,6 +211,9 @@ class MACGen {
   }
 }
 ```
+#### Proof of work
+<img width="1112" height="92" alt="Screenshot 2026-09-08 at 10 05 23 PM" src="https://github.com/user-attachments/assets/7fa8e0c9-a439-495e-ad68-5a5028ab1f97" />
+
 
 ## quiz 8
 
@@ -252,4 +269,7 @@ class NATTable {
   }
 }
 ```
+#### Proof of work
+<img width="1111" height="150" alt="Screenshot 2026-09-08 at 10 04 51 PM" src="https://github.com/user-attachments/assets/b1b2460f-b31e-4c25-9042-7ba4e1757475" />
+
 
