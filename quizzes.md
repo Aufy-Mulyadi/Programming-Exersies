@@ -1,6 +1,6 @@
 # programming excises
 
-## quiz 1
+## Quiz 1
 ### Create a class that generates a random number between 0 and 256, returns a string
 
 ```java
@@ -22,7 +22,7 @@ class RanNum {
 #### Proof of work
 <img width="1103" height="140" alt="Screenshot 2026-09-08 at 9 55 42 PM" src="https://github.com/user-attachments/assets/c2734c3a-19a8-4fdd-a6c7-e14d3300f7e7" />
 
-## quiz 2
+## Quiz 2
 ### Create a class that generates a valid IPv4 address. You may use the class RanNum()
 
 
@@ -43,7 +43,7 @@ class IPv4Gen {
 #### Proof of work
 <img width="1107" height="158" alt="Screenshot 2026-09-08 at 9 59 29 PM" src="https://github.com/user-attachments/assets/3ce7ce88-7419-4088-9f59-15e3531cd735" />
 
-## quiz 3
+## Quiz 3
 ### Create a class that receives a input String add and it checks for valid IPv4 address.
 
 
@@ -70,7 +70,7 @@ class checker {
 #### Proof of work
 <img width="1109" height="133" alt="Screenshot 2026-09-08 at 10 01 14 PM" src="https://github.com/user-attachments/assets/e5180712-b2be-4a58-9d28-39ce39df1fa7" />
 
-## quiz 4
+## Quiz 4
 ### Create a class receives a service name, ip address and build a ip:port address.
 
 ```java
@@ -114,7 +114,7 @@ class porter {
 #### Proof of work
 <img width="1109" height="140" alt="Screenshot 2026-09-08 at 10 02 32 PM" src="https://github.com/user-attachments/assets/dd47a405-64a2-4f60-a426-cb30f71e2d3c" />
 
-## quiz 5
+## Quiz 5
 ### Create a class that uses parallel arrays to store a table of hostnames and their IP addresses.
 
 ```java
@@ -156,7 +156,7 @@ class dns {
 #### Proof of work
 <img width="1114" height="138" alt="Screenshot 2026-09-08 at 10 03 25 PM" src="https://github.com/user-attachments/assets/26a77568-6129-4b21-ab5e-b7d6f7983913" />
 
-## quiz 6
+## Quiz 6
 ### Create a class that uses parallel arrays to filter traffic in network using ip/hostnames.
 
 ```java
@@ -193,7 +193,7 @@ class filter {
 #### Proof of work
 <img width="1105" height="149" alt="Screenshot 2026-09-08 at 10 04 25 PM" src="https://github.com/user-attachments/assets/51b19ff3-3ac6-4f50-b1d4-8e2489755321" />
 
-## quiz 7
+## Quiz 7
 ### Create the flow diagram for the method below
 
 ```java
@@ -221,7 +221,7 @@ class MACGen {
 #### Proof of work
 <img width="1200" height="800" alt="Photo on 08-09-26 at 10 17 PM" src="https://github.com/user-attachments/assets/60a92fe7-bb0f-447a-9711-8da68904fe2e" />
 
-## quiz 8
+## Quiz 8
 ### Create a class that uses parallel arrays to store a NAT table (Network Address Translation)
 
 ```java
@@ -279,4 +279,138 @@ class NATTable {
 #### Proof of work
 <img width="1111" height="150" alt="Screenshot 2026-09-08 at 10 04 51 PM" src="https://github.com/user-attachments/assets/b1b2460f-b31e-4c25-9042-7ba4e1757475" />
 
+## Quiz 9
+### Create a class that receives a 2D array and returns the average across columns and across rows.
+
+```java
+class Average {
+  private final int[][] matrix;
+
+  public Average(int[][] matrix) {
+    this.matrix = matrix;
+  }
+
+  public double[] rowAverage() {
+    double[] answer = new double[matrix.length];
+    double sum = 0;
+    
+    for (int i = 0; i < matrix.length; i++) {
+      for (int j = 0; j < matrix[i].length; j++) sum += matrix[i][j];
+      answer[i] = sum / matrix[i].length;
+    }
+
+    return answer;
+  }
+
+  public double[] columnAverage() {
+    int numRows = matrix.length;
+    int numCols = matrix[0].length;
+    double[] answer = new double[numCols];
+
+    for (int j = 0; j < numCols; j++) {
+      double sum = 0;
+      
+      for (int i = 0; i < numRows; i++) sum += matrix[i][j];
+      answer[j] = sum / numRows;
+    }
+
+    return answer;
+  }
+}
+```
+#### Proof of work
+<img width="833" height="92" alt="image" src="https://github.com/user-attachments/assets/0a6bb93e-7e2a-441a-af8f-417e4786e6b5" />
+
+## Quiz 10
+### Create a class that receives a 2D array and a integer, returns the array scaled by the constant
+
+```java
+class Matrix {
+  private int[][] matrix;
+
+  public Matrix(int[][] matrix) {
+    this.matrix = matrix;
+  }
+
+  public int[][] scale(int scale) {
+    int rows = matrix.length;
+    int cols = matrix[0].length;
+    int[][] scaled = new int[rows][cols];
+
+    for (int i = 0; i < rows; i++) for (int j = 0; j < cols; j++) scaled[i][j] = matrix[i][j] * scale;
+    
+    return scaled;
+  }
+
+  public void show(int[][] targetMatrix) {
+    System.out.println("[");
+
+    for (int[] row : targetMatrix) {
+      System.out.print("  [");
+      for (int val : row) {
+        System.out.printf("%3d", val);
+      }
+      System.out.println("]");
+    }
+
+    System.out.println("]");
+  }
+}
+```
+#### Proof of work
+<img width="820" height="290" alt="image" src="https://github.com/user-attachments/assets/14e1d3b4-4190-4d9a-873a-cfa31c15ec12" />
+
+## Quiz 11
+### DESCRIPTION
+
+```java
+CODE
+```
+#### Proof of work
+<IMAGE>
+
+## Quiz 12
+### DESCRIPTION
+
+```java
+CODE
+```
+#### Proof of work
+<IMAGE>
+
+## Quiz 13
+### DESCRIPTION
+
+```java
+CODE
+```
+#### Proof of work
+<IMAGE>
+
+## Quiz 14
+### DESCRIPTION
+
+```java
+CODE
+```
+#### Proof of work
+<IMAGE>
+
+## Quiz 15
+### DESCRIPTION
+
+```java
+CODE
+```
+#### Proof of work
+<IMAGE>
+
+## Quiz 16
+### DESCRIPTION
+
+```java
+CODE
+```
+#### Proof of work
+<IMAGE>
 
