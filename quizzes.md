@@ -361,13 +361,39 @@ class Matrix {
 <img width="820" height="290" alt="image" src="https://github.com/user-attachments/assets/14e1d3b4-4190-4d9a-873a-cfa31c15ec12" />
 
 ## Quiz 11
-### DESCRIPTION
+### Create a class that accepts a size and returns an identity matrix
 
 ```java
-CODE
+class Matrix2 {
+  private int size;
+
+  public Matrix2(int size) {
+    this.size = size;
+  }
+
+  public int[][] eye() {
+    int[][] answer = new int[size][size];
+    for (int i = 0; i < size; i++) answer[i][i] = 1;
+    return answer;
+  }
+
+  public void show(int[][] targetMatrix) {
+    System.out.println("[");
+
+    for (int[] row : targetMatrix) {
+      System.out.print("  [");
+      for (int val : row) {
+        System.out.printf("%3d", val);
+      }
+      System.out.println("]");
+    }
+
+    System.out.println("]");
+  }
+}
 ```
 #### Proof of work
-<IMAGE>
+<img width="309" height="92" alt="Screenshot 2026-09-16 at 9 03 17 AM" src="https://github.com/user-attachments/assets/34c06183-0110-49b1-b521-e263c3230c17" />
 
 ## Quiz 12
 ### DESCRIPTION
