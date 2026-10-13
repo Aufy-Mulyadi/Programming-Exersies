@@ -1,7 +1,7 @@
 # programming excises
 
 ## Quiz 1
-### Create a class that generates a random number between 0 and 256, returns a string
+### Create a class that generates a random number between 0 and 256, returns a string.
 
 ```java
 import java.util.Random;
@@ -20,11 +20,16 @@ class RanNum {
 }
 ```
 #### Proof of work
+
+```java
+RanNum random = new RanNum();
+System.out.println(random.getNumber());
+```
+
 <img width="1103" height="140" alt="Screenshot 2026-09-08 at 9 55 42 PM" src="https://github.com/user-attachments/assets/c2734c3a-19a8-4fdd-a6c7-e14d3300f7e7" />
 
 ## Quiz 2
 ### Create a class that generates a valid IPv4 address. You may use the class RanNum()
-
 
 ```java
 class IPv4Gen {
@@ -41,6 +46,12 @@ class IPv4Gen {
 }
 ```
 #### Proof of work
+
+```java
+IPv4Gen addr = new IPv4Gen();
+System.out.println(addr.generate());
+```
+
 <img width="1107" height="158" alt="Screenshot 2026-09-08 at 9 59 29 PM" src="https://github.com/user-attachments/assets/3ce7ce88-7419-4088-9f59-15e3531cd735" />
 
 ## Quiz 3
@@ -68,6 +79,17 @@ class checker {
 }
 ```
 #### Proof of work
+
+```java
+checker test1 = new checker("hello");
+System.out.println("hello");
+System.out.println(test1.test);
+
+checker test2 = new checker("192.45.7.201");
+System.out.println("192.45.7.201");
+System.out.println(test2.test);
+```
+
 <img width="1109" height="133" alt="Screenshot 2026-09-08 at 10 01 14 PM" src="https://github.com/user-attachments/assets/e5180712-b2be-4a58-9d28-39ce39df1fa7" />
 
 ## Quiz 4
@@ -112,6 +134,17 @@ class porter {
 }
 ```
 #### Proof of work
+
+```java
+porter test1 = new porter("http", "192.45.7.201");
+System.out.println("http : 192.45.7.201");
+System.out.println(test1.build());
+
+porter test2 = new porter("xbox", "192.45.7.201");
+System.out.println("xbox : 192.45.7.201");
+System.out.println(test2.build());
+```
+
 <img width="1109" height="140" alt="Screenshot 2026-09-08 at 10 02 32 PM" src="https://github.com/user-attachments/assets/dd47a405-64a2-4f60-a426-cb30f71e2d3c" />
 
 ## Quiz 5
@@ -154,6 +187,17 @@ class dns {
 }
 ```
 #### Proof of work
+
+```java
+dns test1 = new dns("google.com");
+System.out.println("google.com");
+System.out.println(test1.lookup());
+
+dns test2 = new dns("jisedu.or.id");
+System.out.println("jisedu.or.id");
+System.out.println(test2.lookup());
+```
+
 <img width="1114" height="138" alt="Screenshot 2026-09-08 at 10 03 25 PM" src="https://github.com/user-attachments/assets/26a77568-6129-4b21-ab5e-b7d6f7983913" />
 
 ## Quiz 6
@@ -191,10 +235,25 @@ class filter {
 }
 ```
 #### Proof of work
+
+```java
+filter test1 = new filter("127.0.0.1");
+System.out.println("127.0.0.1");
+System.out.println(test1.check());
+
+filter test2 = new filter("time.com");
+System.out.println("time.com");
+System.out.println(test2.check());
+
+filter test3 = new filter("example.com");
+System.out.println("example.com");
+System.out.println(test3.check());
+```
+
 <img width="1105" height="149" alt="Screenshot 2026-09-08 at 10 04 25 PM" src="https://github.com/user-attachments/assets/51b19ff3-3ac6-4f50-b1d4-8e2489755321" />
 
 ## Quiz 7
-### Create the flow diagram for the method below
+### Create the flow diagram for the method below.
 
 ```java
 import java.util.Random;
@@ -219,10 +278,16 @@ class MACGen {
 }
 ```
 #### Proof of work
+
+```java
+MACGen gen = new MACGen();
+System.out.println(gen.generateMAC());
+```
+
 <img width="1200" height="800" alt="Photo on 08-09-26 at 10 17 PM" src="https://github.com/user-attachments/assets/60a92fe7-bb0f-447a-9711-8da68904fe2e" />
 
 ## Quiz 8
-### Create a class that uses parallel arrays to store a NAT table (Network Address Translation)
+### Create a class that uses parallel arrays to store a NAT table (Network Address Translation).
 
 ```java
 class NATTable {
@@ -277,6 +342,13 @@ class NATTable {
 }
 ```
 #### Proof of work
+
+```java
+NATTable nat = new NATTable();
+System.out.println(nat.get_new_trans("192.168.1.10", 4500));
+System.out.println(nat.get_new_trans("192.168.1.13", 6000));
+```
+
 <img width="1111" height="150" alt="Screenshot 2026-09-08 at 10 04 51 PM" src="https://github.com/user-attachments/assets/b1b2460f-b31e-4c25-9042-7ba4e1757475" />
 
 ## Quiz 9
@@ -319,10 +391,27 @@ class Average {
 }
 ```
 #### Proof of work
+
+```java
+int[][] numbers = {
+  {1, 2, 3},
+  {4, 5, 6},
+  {7, 8, 9}
+};
+
+Average averager = new Average(numbers);
+double[] rowAvg = averager.rowAverage();
+double[] colAvg = averager.columnAverage();
+
+System.out.println("Matrix         : " + Arrays.deepToString(numbers));
+System.out.println("Row Averages   : " + Arrays.toString(rowAvg));
+System.out.println("Column Averages: " + Arrays.toString(colAvg));
+```
+
 <img width="833" height="92" alt="image" src="https://github.com/user-attachments/assets/0a6bb93e-7e2a-441a-af8f-417e4786e6b5" />
 
 ## Quiz 10
-### Create a class that receives a 2D array and a integer, returns the array scaled by the constant
+### Create a class that receives a 2D array and a integer, returns the array scaled by the constant.
 
 ```java
 class Matrix {
@@ -358,43 +447,193 @@ class Matrix {
 }
 ```
 #### Proof of work
+
+```java
+int[][] matrix = {
+  {1, 2, 3},
+  {4, 5, 6},
+  {7, 8, 9}
+};
+int scale = 3;
+
+Matrix test = new Matrix(matrix);
+int[][] scaled_matrix = test.scale(scale);
+
+System.out.println("Original Matrix:");
+prettyPrint(matrix);
+
+System.out.println("Scaled Matrix:");
+test.show(scaled_matrix);
+```
+
 <img width="820" height="290" alt="image" src="https://github.com/user-attachments/assets/14e1d3b4-4190-4d9a-873a-cfa31c15ec12" />
 
 ## Quiz 11
-### DESCRIPTION
+### Create a class that receives a constant n and returns a identity matrix of size n x n.
 
 ```java
-CODE
+class Matrix11 {
+  private final int size;
+
+  public Matrix11(int size) {
+    this.size = size;
+  }
+
+  public int[][] identity() {
+    int[][] i_matrix = new int[size][size];
+    for (int i = 0; i < size; i++) {
+      i_matrix[i][i] = 1;
+    }
+    return i_matrix;
+  }
+
+  public void show(int[][] mat) {
+    for (int[] row : mat) {
+      System.out.print("[");
+      for (int j = 0; j < row.length; j++) {
+        System.out.print(row[j] + (j < row.length - 1 ? "," : ""));
+      }
+      System.out.println("]");
+    }
+  }
+}
 ```
 #### Proof of work
-<IMAGE>
+
+```java
+int size = 3;
+Matrix11 test = new Matrix11(size);
+int[][] i_matrix = test.identity();
+test.show(i_matrix);
+```
+
+<img width="1411" height="181" alt="image" src="https://github.com/user-attachments/assets/5bae006e-6406-4521-a81c-061cf83ee1a7" />
 
 ## Quiz 12
-### DESCRIPTION
+### Create a method that receives a matrix of size n x m: the output is a 1D “vectorized” version of the input.
 
 ```java
-CODE
+class Matrix12 {
+  private final int[][] matrix;
+
+  public Matrix12(int[][] matrix) {
+    this.matrix = matrix;
+  }
+
+  public int[] vectorize() {
+    int rows = matrix.length;
+    int cols = matrix[0].length;
+    int[] vec = new int[rows * cols];
+    int idx = 0;
+    for (int i = 0; i < rows; i++) {
+      for (int j = 0; j < cols; j++) {
+        vec[idx++] = matrix[i][j];
+      }
+    }
+    return vec;
+  }
+
+  public void show(int[] vec) {
+    System.out.println(Arrays.toString(vec));
+  }
+}
 ```
 #### Proof of work
-<IMAGE>
+
+```java
+int[][] numbers = { 
+  {1, 2, 3, 3}, 
+  {4, 5, 6, 6}, 
+  {7, 8, 9, 9}
+};
+Matrix12 test = new Matrix12(numbers);
+int[] vectorized_matrix = test.vectorize();
+test.show(vectorized_matrix);
+```
+
+<img width="1407" height="120" alt="image" src="https://github.com/user-attachments/assets/e9ae2b20-721c-4064-bd6a-79701f0e8539" />
 
 ## Quiz 13
-### DESCRIPTION
+### Create a method that receives a 1D array and builds a square matrix, use zero-padded.
 
 ```java
-CODE
+class Matrix13 {
+  private final int[] numbers;
+
+  public Matrix13(int[] numbers) {
+    this.numbers = numbers;
+  }
+
+  public int[][] toMatrix() {
+    int len = numbers.length;
+    int size = (int) Math.ceil(Math.sqrt(len));
+    int[][] mat = new int[size][size];
+    for (int i = 0; i < len; i++) {
+      int row = i / size;
+      int col = i % size;
+      mat[row][col] = numbers[i];
+    }
+    return mat;
+  }
+
+  public void show(int[][] mat) {
+    for (int[] row : mat) {
+      System.out.print("[");
+      for (int j = 0; j < row.length; j++) {
+        System.out.print(row[j] + (j < row.length - 1 ? ", " : ""));
+      }
+      System.out.println("]");
+    }
+  }
+}
 ```
 #### Proof of work
-<IMAGE>
+
+```java
+int[] numbers = {1, 2, 3, 3, 4, 5, 6, 6, 7, 8};
+Matrix13 test = new Matrix13(numbers);
+int[][] into_matrix = test.toMatrix();
+test.show(into_matrix);
+```
+
+<img width="1412" height="215" alt="image" src="https://github.com/user-attachments/assets/9e748b4e-1ca2-4690-829a-7e6fda6dc14d" />
 
 ## Quiz 14
-### DESCRIPTION
+### Create a method that creates a ascending diagonal matrix.
 
 ```java
-CODE
+class Matrix14 {
+  public Matrix14() {}
+
+  public int[][] diagonal(int size) {
+    int[][] mat = new int[size][size];
+    for (int i = 0; i < size; i++) {
+      mat[i][i] = i + 1;
+    }
+    return mat;
+  }
+
+  public void show(int[][] mat) {
+    for (int i = 0; i < mat.length; i++) {
+      System.out.print("[");
+      for (int j = 0; j < mat[i].length; j++) {
+        System.out.print(mat[i][j] + (j < mat[i].length - 1 ? "," : ""));
+      }
+      System.out.println("]" + (i < mat.length - 1 ? "," : ""));
+    }
+  }
+}
 ```
 #### Proof of work
-<IMAGE>
+
+```java
+int size = 4;
+Matrix14 test = new Matrix14();
+int[][] into_matrix = test.diagonal(size);
+test.show(into_matrix);
+```
+
+<img width="1405" height="202" alt="image" src="https://github.com/user-attachments/assets/059171ca-7ba1-415d-862c-8c7dbb11b927" />
 
 ## Quiz 15
 ### DESCRIPTION
@@ -403,6 +642,11 @@ CODE
 CODE
 ```
 #### Proof of work
+
+```java
+CODE
+```
+
 <IMAGE>
 
 ## Quiz 16
@@ -412,5 +656,164 @@ CODE
 CODE
 ```
 #### Proof of work
+
+```java
+CODE
+```
+
+<IMAGE>
+
+## Quiz 17
+### DESCRIPTION
+
+```java
+CODE
+```
+#### Proof of work
+
+```java
+CODE
+```
+
+<IMAGE>
+
+## Quiz 18
+### DESCRIPTION
+
+```java
+CODE
+```
+#### Proof of work
+
+```java
+CODE
+```
+
+<IMAGE>
+
+## Quiz 19
+### DESCRIPTION
+
+```java
+CODE
+```
+#### Proof of work
+
+```java
+CODE
+```
+
+<IMAGE>
+
+## Quiz 20
+### DESCRIPTION
+
+```java
+CODE
+```
+#### Proof of work
+
+```java
+CODE
+```
+
+<IMAGE>
+
+## Quiz 21
+### DESCRIPTION
+
+```java
+CODE
+```
+#### Proof of work
+
+```java
+CODE
+```
+
+<IMAGE>
+
+## Quiz 22
+### DESCRIPTION
+
+```java
+CODE
+```
+#### Proof of work
+
+```java
+CODE
+```
+
+<IMAGE>
+
+## Quiz 23
+### DESCRIPTION
+
+```java
+CODE
+```
+#### Proof of work
+
+```java
+CODE
+```
+
+<IMAGE>
+
+## Quiz 24
+### DESCRIPTION
+
+```java
+CODE
+```
+#### Proof of work
+
+```java
+CODE
+```
+
+<IMAGE>
+
+## Quiz 25
+### DESCRIPTION
+
+```java
+CODE
+```
+#### Proof of work
+
+```java
+CODE
+```
+
+<IMAGE>
+
+## Quiz 26
+### DESCRIPTION
+
+```java
+CODE
+```
+#### Proof of work
+
+```java
+CODE
+```
+
+<IMAGE>
+
+## Quiz 27
+### DESCRIPTION
+
+```java
+CODE
+```
+#### Proof of work
+
+```java
+CODE
+```
+
 <IMAGE>
 
