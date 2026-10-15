@@ -636,32 +636,73 @@ test.show(into_matrix);
 <img width="1405" height="202" alt="image" src="https://github.com/user-attachments/assets/059171ca-7ba1-415d-862c-8c7dbb11b927" />
 
 ## Quiz 15
-### DESCRIPTION
+### Create a method that calculates the error in representation of a ADC with a range 0-5v and resolution 6 bits for and voltage measured from an analog input.
 
 ```java
-CODE
+class ADCCalculator {
+  private final double minVoltage;
+  private final double maxVoltage;
+  private final int bits;
+
+  public ADCCalculator(double minVoltage, double maxVoltage, int bits) {
+    this.minVoltage = minVoltage;
+    this.maxVoltage = maxVoltage;
+    this.bits = bits;
+  }
+
+  public double calculateADCError(double analogSample) {
+    double range = maxVoltage - minVoltage;
+    double levels = Math.pow(2, bits);
+    double step = range / levels;
+    double quantized = Math.round(analogSample / step) * step;
+    return Math.abs(analogSample - quantized);
+  }
+}
 ```
 #### Proof of work
 
 ```java
-CODE
+double analogSample = 2.35;
+ADCCalculator adc = new ADCCalculator(0.0, 5.0, 6);
+double error = adc.calculateADCError(analogSample);
+System.out.println("ADC Error: " + error + " V");
 ```
 
-<IMAGE>
+<img width="1532" height="142" alt="image" src="https://github.com/user-attachments/assets/3d3cd493-8549-4316-beac-c745bb9569f5" />
 
 ## Quiz 16
-### DESCRIPTION
+### Create a method that calculates the minimum number of bits required for an ADC to measure the smallest voltage difference specified in an array of voltage values, given the minimum and maximum input voltage range.
 
 ```java
-CODE
+class ADCResolver {
+  public static int calculateResolution(double minVoltage, double maxVoltage, double[] readings) {
+    double[] sorted = readings.clone();
+    Arrays.sort(sorted);
+    
+    double minDiff = Double.MAX_VALUE;
+    for (int i = 1; i < sorted.length; i++) {
+      double diff = sorted[i] - sorted[i - 1];
+      if (diff > 0 && diff < minDiff) {
+        minDiff = diff;
+      }
+    }
+    
+    double range = maxVoltage - minVoltage;
+    double requiredLevels = range / minDiff;
+    int bits = (int) Math.ceil(Math.log(requiredLevels) / Math.log(2));
+    return bits;
+  }
+}
 ```
 #### Proof of work
 
 ```java
-CODE
+double[] readings = {2.0, 1.5, 0.0, 2.02, 4.0, 5.0};
+int result = ADCResolver.calculateResolution(0.0, 5.0, readings);
+System.out.println("Required ADC resolution: " + result + " bits");
 ```
 
-<IMAGE>
+<img width="1531" height="147" alt="image" src="https://github.com/user-attachments/assets/98f778f1-6a98-47a3-a15a-d514eadd6e33" />
 
 ## Quiz 17
 ### DESCRIPTION
