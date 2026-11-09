@@ -705,182 +705,113 @@ System.out.println("Required ADC resolution: " + result + " bits");
 <img width="1531" height="147" alt="image" src="https://github.com/user-attachments/assets/98f778f1-6a98-47a3-a15a-d514eadd6e33" />
 
 ## Quiz 17
-### DESCRIPTION
+### Define the term encapsulation in the context of computer networks
 
-```java
-CODE
 ```
-#### Proof of work
-
-```java
-CODE
+The wrapping of data with protocol header and trailer information as it passes down through the layers of the network model (such as OSI or TCP/IP) before transmission
 ```
-
-<IMAGE>
 
 ## Quiz 18
-### DESCRIPTION
+### State the fundamental technologies required for a VPN service
 
-```java
-CODE
 ```
-#### Proof of work
-
-```java
-CODE
+Tunneling protocols encapsulate and route private data packets across a public network, while encryption mechanisms ensure data confidentiality and integrity during transmission
 ```
-
-<IMAGE>
 
 ## Quiz 19
-### DESCRIPTION
+### Identify one protocol used in the Application layer of the TCP/IP model
 
-```java
-CODE
 ```
-#### Proof of work
-
-```java
-CODE
+HTTP (Hypertext Transfer Protocol). It is used for transferring web pages and communication between web browsers and servers on the World Wide Web
 ```
-
-<IMAGE>
 
 ## Quiz 20
-### DESCRIPTION
+### Outline one step needed during preprocessing of a numerical database
 
-```java
-CODE
 ```
-#### Proof of work
+Normalization/feature scaling.
 
-```java
-CODE
+Rescaling numerical values to a range prevent features with larger numeric scales from disproportionately dominating the model
 ```
-
-<IMAGE>
 
 ## Quiz 21
-### DESCRIPTION
+### A marketing firm uses ML to analyze customer survey data. Describe one common issue in survey data that would require data preprocessing
 
-```java
-CODE
 ```
-#### Proof of work
+Missing values or incomplete survey responses. Respondents may skip optional questions, resulting in null or empty entries in specific feature columns. Algorithms cannot natively process missing values and will either throw an error or produce biased predictions.
 
-```java
-CODE
+Imputating missing values or removing incomplete records entirely before model training is advised to avoid the problems described.
 ```
-
-<IMAGE>
 
 ## Quiz 22
-### DESCRIPTION
+### A school is developing a ML model to predict students' performance based on data from previous academic years. Explain how data preprocessing can improve the outcomes of the ML model
 
-```java
-class Matrix2 {
-  private int size;
-
-  public Matrix2(int size) {
-    this.size = size;
-  }
-
-  public int[][] eye() {
-    int[][] answer = new int[size][size];
-    for (int i = 0; i < size; i++) answer[i][i] = 1;
-    return answer;
-  }
-
-  public void show(int[][] targetMatrix) {
-    System.out.println("[");
-
-    for (int[] row : targetMatrix) {
-      System.out.print("  [");
-      for (int val : row) {
-        System.out.printf("%3d", val);
-      }
-      System.out.println("]");
-    }
-
-    System.out.println("]");
-  }
-}
 ```
-#### Proof of work
+University databases may contain incomplete student records. Imputing or filtering these gaps prevents algorithmic errors and ensures the model is trained on robust, complete samples
 
-```java
-CODE
+Inputs like past GPA or credit-hours have different numerical magnitudes. Scaling ensures features contribute equally to optimization algorithms without larger scales dominating the objective function
+
+Data entry errors (like unusual test scores or impossible values) act as noise. Cleaning and removing these outliers prevents the model from learning distorted relationships, improving generalization
 ```
-
-<IMAGE>
 
 ## Quiz 23
-### DESCRIPTION
+### A university is using a ML model to help undergraduate admission based on data containing 50 features. Explain how dimensionality reduction could be used to improve the outcomes of the ML model
 
-```java
-CODE
+Note: Prompt reconstructed from memory; may be inaccurate
+
 ```
-#### Proof of work
-
-```java
-CODE
+With 50 features, the feature space becomes extremely sparse, making it suseptible to overfitting. Dimensionality reduction techniques optimize models by using fewer dimensions, thereby making the models use less memory and processing time
 ```
 
-<IMAGE>
+Note: Prompt reconstructed from memory; may be inaccurate
 
 ## Quiz 24
-### DESCRIPTION
+### A company is using a K-NN model to classify data. Explain how K-fold cross-validation could be used to improve the outcomes of the ML model
 
-```java
-CODE
 ```
-#### Proof of work
+Instead of relying on a single, potentially biased random train-test split, K-fold cross-validation partitions the dataset into K equal subsets, iteratively training on the folds to yield a reliable average performance metric
 
-```java
-CODE
+And because K-NN is an lazy learner, K-fold validation allows most of the dataset to be used for training without discarding large portions into permanent hold-out sets
 ```
-
-<IMAGE>
 
 ## Quiz 25
 ### DESCRIPTION
 
-```java
+```
 CODE
 ```
-#### Proof of work
-
-```java
-CODE
-```
-
-<IMAGE>
 
 ## Quiz 26
 ### DESCRIPTION
 
-```java
+```
 CODE
 ```
-#### Proof of work
-
-```java
-CODE
-```
-
-<IMAGE>
 
 ## Quiz 27
 ### DESCRIPTION
 
-```java
-CODE
 ```
-#### Proof of work
-
-```java
 CODE
 ```
 
-<IMAGE>
+## Quiz 28
+### DESCRIPTION
 
+```
+CODE
+```
+
+## Quiz 29
+### DESCRIPTION
+
+```
+CODE
+```
+
+## Quiz 30
+### DESCRIPTION
+
+```
+CODE
+```
