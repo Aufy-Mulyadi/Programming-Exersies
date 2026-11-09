@@ -755,23 +755,19 @@ Data entry errors (like unusual test scores or impossible values) act as noise. 
 ```
 
 ## Quiz 23
-### A university is using a ML model to help undergraduate admission based on data containing 50 features. Explain how dimensionality reduction could be used to improve the outcomes of the ML model
-
-Note: Prompt reconstructed from memory; may be inaccurate
+### A university is preparing an ML model for admission purposes using a dataset containing 50 different metrics from applicants. Explain how dimensionality reduction techniques could be used in this context.
 
 ```
-With 50 features, the feature space becomes extremely sparse, making it suseptible to overfitting. Dimensionality reduction techniques optimize models by using fewer dimensions, thereby making the models use less memory and processing time
+Dimensionality reduction reduces 50-dimensional feature space down to more information-rich axes, which helps avoid the curse of dimensionality and prevents model overfitting. A Lower dimensional feature space means a more efficient model in terms of complexity and memory usage, thereby speeding up the training and inference time of the ML model.
 ```
-
-Note: Prompt reconstructed from memory; may be inaccurate
 
 ## Quiz 24
-### A company is using a K-NN model to classify data. Explain how K-fold cross-validation could be used to improve the outcomes of the ML model
+### Explain why k-fold cross validation is used with the k-nn technique.
 
 ```
-Instead of relying on a single, potentially biased random train-test split, K-fold cross-validation partitions the dataset into K equal subsets, iteratively training on the folds to yield a reliable average performance metric
+k-nearest neighbors performance depends heavily on the choice of the number of neighbors. k-fold cross-validation evaluates different values of k across multiple data splits to identify the optimal parameter configuration.
 
-And because K-NN is an lazy learner, K-fold validation allows most of the dataset to be used for training without discarding large portions into permanent hold-out sets
+By rotating training and validation sets across k iterations, it prevents sampling bias and ensures the  metric reflects generalization rather than a lucky testing split. This also ensures every data point is utilized for both training and validation without wasting limited historical applicant data.
 ```
 
 ## Quiz 25
