@@ -708,21 +708,23 @@ System.out.println("Required ADC resolution: " + result + " bits");
 ### Define the term encapsulation in the context of computer networks
 
 ```
-The wrapping of data with protocol header and trailer information as it passes down through the layers of the network model (such as OSI or TCP/IP) before transmission
+The wrapping of data with protocol header and trailing information as it passes down through the layers of the TCP/IP network model before transmission.
 ```
 
 ## Quiz 18
 ### State the fundamental technologies required for a VPN service
 
 ```
-Tunneling protocols encapsulate and route private data packets across a public network, while encryption mechanisms ensure data confidentiality and integrity during transmission
+Tunneling protocols: encapsulate and route private data packets across a public network.
+
+Encryption mechanisms: ensure data confidentiality and integrity during transmission.
 ```
 
 ## Quiz 19
 ### Identify one protocol used in the Application layer of the TCP/IP model
 
 ```
-HTTP (Hypertext Transfer Protocol). It is used for transferring web pages and communication between web browsers and servers on the World Wide Web
+HTTP (Hypertext Transfer Protocol). It's used for transferring web pages and communication between web browsers and servers on the World Wide Web.
 ```
 
 ## Quiz 20
@@ -731,14 +733,14 @@ HTTP (Hypertext Transfer Protocol). It is used for transferring web pages and co
 ```
 Normalization/feature scaling.
 
-Rescaling numerical values to a range prevent features with larger numeric scales from disproportionately dominating the model
+Rescaling numerical values to a range prevent features with larger numeric scales from disproportionately dominating the model, which can be done through z-normalization or min-max linear scaling.
 ```
 
 ## Quiz 21
 ### A marketing firm uses ML to analyze customer survey data. Describe one common issue in survey data that would require data preprocessing
 
 ```
-Missing values or incomplete survey responses. Respondents may skip optional questions, resulting in null or empty entries in specific feature columns. Algorithms cannot natively process missing values and will either throw an error or produce biased predictions.
+Missing values or incomplete survey responses. responses may include null or empty entries in specific feature columns, mostly for optional questions. Algorithms cannot natively process missing values and will either throw an error or produce biased predictions.
 
 Imputating missing values or removing incomplete records entirely before model training is advised to avoid the problems described.
 ```
@@ -747,11 +749,7 @@ Imputating missing values or removing incomplete records entirely before model t
 ### A school is developing a ML model to predict students' performance based on data from previous academic years. Explain how data preprocessing can improve the outcomes of the ML model
 
 ```
-University databases may contain incomplete student records. Imputing or filtering these gaps prevents algorithmic errors and ensures the model is trained on robust, complete samples
-
-Inputs like past GPA or credit-hours have different numerical magnitudes. Scaling ensures features contribute equally to optimization algorithms without larger scales dominating the objective function
-
-Data entry errors (like unusual test scores or impossible values) act as noise. Cleaning and removing these outliers prevents the model from learning distorted relationships, improving generalization
+University databases may contain incomplete student records, differing numerical scales, or data errors. Imputing or filtering these gaps prevents algorithmic errors and ensures the model is robust, while scaling is needed to ensure equal contriution abong features. Data errors (like unusual test scores or impossible values) must be removed to prevent the model from learning distorted relationships.
 ```
 
 ## Quiz 23
@@ -765,9 +763,7 @@ Dimensionality reduction reduces 50-dimensional feature space down to more infor
 ### Explain why k-fold cross validation is used with the k-nn technique.
 
 ```
-k-nearest neighbors performance depends heavily on the choice of the number of neighbors. k-fold cross-validation evaluates different values of k across multiple data splits to identify the optimal parameter configuration.
-
-By rotating training and validation sets across k iterations, it prevents sampling bias and ensures the  metric reflects generalization rather than a lucky testing split. This also ensures every data point is utilized for both training and validation without wasting limited historical applicant data.
+k-nearest neighbors performance depends heavily on the choice of the number of neighbors. k-fold cross-validation evaluates different values of k across multiple data splits to identify the optimal parameter configuration. By rotating training and validation sets across k iterations, it prevents sampling bias and ensures the metric reflects accurately rather than a lucky testing split. This method also use available data for both training and validation without wasting data.
 ```
 
 ## Quiz 25
